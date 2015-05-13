@@ -28,7 +28,7 @@ $(TARGET).wrapper: $(TARGET).env.sh $(TARGET).bin
 	# include the environment setup script first
 	cat  >>$@ $<
 	# produce a line that invokes the actual command
-	echo >>$@ 'exec -- "$(realpath $(TARGET).bin)/$${0##*/}" "$$@"'
+	echo >>$@ 'exec -- "$(shell readlink $(TARGET).bin)/$${0##*/}" "$$@"'
 
 else
 TARGET_BINS = $(wildcard *.bin)
