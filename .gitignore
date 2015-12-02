@@ -1,2 +1,6 @@
-/*.wrapper
-/greenplum
+/*
+!/*.bin
+!/*.env.sh
+!/Makefile
+!/README.md
+!/.gitignore
