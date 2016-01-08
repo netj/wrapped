@@ -1,1 +1,1 @@
-/lfs/local/0/senwu/software/greenplum/greenplum-db/greenplum_path.sh
+greenplum.bin/../greenplum_path.sh
